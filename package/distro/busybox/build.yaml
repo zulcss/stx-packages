@@ -1,0 +1,5 @@
+image: busybox
+package_dir: /busybox
+steps:
+- mkdir -p /busybox/bin
+- cp /bin/busybox /busybox/bin
