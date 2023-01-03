@@ -10,4 +10,5 @@ RUN apt-get update && \
 
 COPY --from=luet /usr/bin/luet /usr/bin/luet
 RUN mkdir -p /etc/luet/repos.conf.d && \
-    luet repo add stx-test -y --url http://localhost --type http
+    luet repo add stx-test -y --url http://localhost --type http && \
+    luet install -y distro/stx-base

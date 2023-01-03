@@ -1,0 +1,41 @@
+packages:
+- &debian
+  name: "stx-distro"
+  category: "distro"
+  version: "20221231"
+  image: "debian:testing"
+  packages: >-
+    init
+    systemd-container
+    sudo 
+    iproute2
+    parted
+    dracut
+    dracut-config-generic
+    procps
+    dracut-network
+    dracut-live
+    tar
+    e2fsprogs
+    curl
+    openssh-server
+    openssh-client
+    iputils-ping
+    dosfstools
+    curl
+    jq
+    vim
+    jq
+    conntrack
+    iptables
+    less
+    zstd
+    btrfs-progs
+    golang
+    bash-completion
+    lsscsi
+    lvm2
+    nfs-utils
+    open-iscsi
+    tzdata
+

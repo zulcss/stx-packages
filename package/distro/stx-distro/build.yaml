@@ -1,0 +1,6 @@
+image: "{{.Values.iamge}}"
+env:
+  DEBIAN_FRONTEND=noninteractive
+steps:
+  - apt-get update && apt-get install -y {{.Values.packages}}
+  - apt-get clean && rm -rf /var/cache/*
